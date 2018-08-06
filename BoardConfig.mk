@@ -36,9 +36,9 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.config
 BOARD_KERNEL_CMDLINE += buildvariant=$(TARGET_BUILD_VARIANT) enforcing=0 androidboot.selinux=permissive
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := clang-stable
+TARGET_KERNEL_CLANG_VERSION := 7.0.2
 TARGET_KERNEL_SOURCE := kernel/essential/mata
-TARGET_KERNEL_CONFIG := custom_defconfig
+TARGET_KERNEL_CONFIG := noob_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_COMPILE_WITH_MSM_KERNEL := true
